@@ -1,0 +1,22 @@
+<div>
+  <h3>Editar Produto</h3>
+</div>
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Nome do Produto</mat-label>
+    <input matInput type="text" name="nomeProduto" id="nomeProduto" [(ngModel)]="atualizaProduto.nome">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Preço</mat-label>
+    <input matInput type="number" name="precoProduto" id="precoProduto" [(ngModel)]="atualizaProduto.preco">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Descrição</mat-label>
+    <input matInput type="text" name="descricaoproduto" id=" descricaoproduto" [(ngModel)]="atualizaProduto.desc">
+  </mat-form-field>
+</form>
+
+  <button mat-raised-button color="primary" (click)="atualizar()">Salvar</button>
+  <button mat-raised-button color="warn" routerLink="/produtos/detalhe/1">Voltar</button>
